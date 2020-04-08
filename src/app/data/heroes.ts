@@ -33,7 +33,7 @@ export const Heroes: Hero[] = [
   },
   {
     name: 'Anduin Wrynn',
-    imageUrl: 'assets/img/alliance/anduin.jpg',
+    imageUrl: 'assets/img/alliance/anduin.jpeg',
     faction: 'Alliance',
     race: 'Human',
     description:
@@ -57,7 +57,7 @@ export const Heroes: Hero[] = [
   },
   {
     name: 'Cenarius',
-    imageUrl: 'assets/img/alliance/varian.jpg',
+    imageUrl: 'assets/img/alliance/cenarius.jpg',
     faction: 'Alliance',
     race: 'Wild God',
     description:
