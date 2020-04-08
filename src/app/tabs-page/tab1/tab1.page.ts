@@ -7,9 +7,10 @@ import { Hero, Heroes } from 'src/app/data/heroes';
 })
 export class Tab1Page implements OnInit {
   heroes: Hero[] = Heroes;
+  faction = 'Horde';
   constructor() {}
   ngOnInit() {
     // Show only horde heroes
-    this.heroes = this.heroes.filter((hero) => hero.faction === 'horde');
+    this.heroes = this.heroes.filter((hero) => hero.faction === this.faction);
   }
 }
