@@ -12,16 +12,9 @@
       <ion-title size="large">Horde</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <ion-card ngFor="let hero of hordeHeroes">
-    <img [src]="hero.image" />
-
-    <ion-card-header>
-      <ion-card-subtitle>{{hero.faction}}</ion-card-subtitle>
-      <ion-card-title>{{hero.name}}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      {{hero.description}}
-    </ion-card-content>
-  </ion-card>
+  <app-hero-card
+    *ngFor="let hero of heroes"
+    [hero]="hero"
+    [faction]="horde"
+  ></app-hero-card>
 </ion-content>

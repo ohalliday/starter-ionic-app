@@ -12,6 +12,9 @@
       <ion-title size="large">Alliance</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Alliance"></app-explore-container>
+  <app-hero-card
+    *ngFor="let hero of heroes"
+    [hero]="hero"
+    [faction]="horde"
+  ></app-hero-card>
 </ion-content>

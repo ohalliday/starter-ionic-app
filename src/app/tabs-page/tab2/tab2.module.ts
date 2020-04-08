@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
+import { CardModule } from 'src/app/card/card.module';
 import { Tab2Page } from './tab2.page';
 
 @NgModule({
@@ -11,7 +11,7 @@ import { Tab2Page } from './tab2.page';
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
+    CardModule,
     RouterModule.forChild([{ path: '', component: Tab2Page }]),
   ],
   declarations: [Tab2Page],
